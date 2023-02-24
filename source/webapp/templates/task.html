@@ -5,7 +5,7 @@
     <div class="card mt-5">
         <div class="card-body">
             <h5 class="card-title">Заголовок: {{ task.title }}</h5>
-            <p>Описание: {{ task.description }}</p>
+            <p>Описание: {{ task.description|linebreaks  }}</p>
             <p>Статус: {{ task.status }}</p>
             <p>Выполнить до: {{ task.completion_date }}</p>
         </div>
